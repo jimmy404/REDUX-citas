@@ -6,10 +6,13 @@ const ListadoCitas = () => {
     //Obtener las citas del state
     const citas = useSelector((state) => state.citas);
 
+    //mensaje condicional
+    const mensaje = Object.keys(citas.citas).length === 0 ? 'No Hay Citas' : 'Administra las Citas aqui';
+
     return(
         <div className="card mt-5">
             <div className="card-body">
-                <h2 className="card-title text-center">Administra las Citas aqui</h2>
+                <h2 className="card-title text-center">{mensaje}</h2>
                 <div className="lista-citas">
                     {citas.citas.map(cita=>(
                         <div className="media mt-3">
