@@ -9,13 +9,13 @@ function App() {
       </header>
 
       <div className="row mt-3">
-        <div className="col-md-6">
-          Formulario Aqui
-        </div>
-        <div className="col-md-6">
-          Listado Aqui
-        </div>
-      </div>
+            <div className="col-md-6">
+              Formulario Aqui
+            </div>
+            <div className="col-md-6">
+              Listado Aqui
+            </div>
+          </div>
     </div>
   );
 }
