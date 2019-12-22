@@ -31,7 +31,11 @@ const submitNuevaCita = e => {
         sintomas
     })
     //reiniciar el formulario
-
+    guardarMascota('');
+    guardarPropietario('');
+    guardarFecha('');
+    guardarHora('');
+    guardarSintomas('');
 }
 
     return(
