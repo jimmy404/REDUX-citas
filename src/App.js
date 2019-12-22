@@ -1,5 +1,7 @@
 import React from 'react';
 import AgregarCita from './componentes/AgregarCita';
+import ListadoCitas from './componentes/ListadoCitas';
+
 //redux
 import store from './store';
 import { Provider } from 'react-redux';
@@ -17,7 +19,7 @@ function App() {
               <AgregarCita />
             </div>
             <div className="col-md-6">
-              Listado Aqui
+              <ListadoCitas />
             </div>
           </div>
     </div>
