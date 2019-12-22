@@ -22,10 +22,11 @@ const submitNuevaCita = e => {
     e.preventDefault();
 
     //Validar el formulario
-    if(mascota.trim() === ''){
+    if(mascota.trim() === '' || propietario.trim() === '' || fecha.trim() === '' || hora.trim() === '' || sintomas.trim() === ''){
         validarFormulario(true);
         return;
     }
+    validarFormulario(false);
     //crear la nueva cita
     agregarNuevaCita({
         id: uuid(),
